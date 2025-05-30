@@ -34,9 +34,8 @@ const ZotBinsFeatures = () => {
     },
     {
       icon: "📱",
-      title: "Offline Capable",
-      description:
-        "Works without internet connection, syncing your progress when you're back online",
+      title: "iOS Compatible",
+      description: "Built with native iOS integration and performance",
     },
   ];
 
