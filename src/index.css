@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* .slick-slide > div {
+  margin: 0 0px;
+} */
+
+.slick-slide {
+  transform: scale(0.8);
+  transition: all 0.85s ease-in-out;
+  padding: 40px 0px;
+}
+
+.slick-center {
+  transform: scale(0.92);
+}
+
+.floating-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.float-icon {
+  position: absolute;
+  opacity: 0.1;
+  animation: float 6s ease-in-out infinite;
+}
+
+.float-icon:nth-child(1) {
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+.float-icon:nth-child(2) {
+  top: 20%;
+  right: 15%;
+  animation-delay: -2s;
+}
+.float-icon:nth-child(3) {
+  bottom: 30%;
+  left: 20%;
+  animation-delay: -4s;
+}
+.float-icon:nth-child(4) {
+  bottom: 20%;
+  right: 10%;
+  animation-delay: -1s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
